@@ -38,6 +38,7 @@ for ((i=0; i<total-1; i++)); do
   echo -ne "Comparing... [$current/$total]\r"
 
   diffoscope --no-default-limits \
+    --new-file \
     --exclude=UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs \
     --exclude-directory-metadata yes \
     --max-diff-block-lines 0 \
